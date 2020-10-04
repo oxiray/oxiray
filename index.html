@@ -15,6 +15,10 @@
 <link href="plugins/icon-font/styles.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
 </head>
 
 <body>
@@ -27,13 +31,13 @@
 		
 		<!-- Logo -->
 		<div class="logo mr-auto">
-			<a href="#">Oxi<span>Ray</span></a>
+			<a href="index.html">Ox<span>IR</span>ay</a>
 		</div>
 
 		<!-- Navigation -->
 		<nav class="main_nav justify-self-end text-right">
 			<ul>
-				<li class="active"><a href="#">Home</a></li>
+				<li class="active"><a href="index.html">Home</a></li>
 				<li><a href="about.html">About Us</a></li>
 				<!-- <li><a href="services.html">Services</a></li> -->
 				<!-- <li><a href="portfolio.html">Portfolio</a></li> -->
@@ -101,7 +105,7 @@
 		<div class="menu menu_mm text-right">
 			<div class="menu_close"><i class="far fa-times-circle trans_200"></i></div>
 			<ul class="menu_mm">
-				<li class="menu_mm active"><a href="#">Home</a></li>
+				<li class="menu_mm active"><a href="index.html">Home</a></li>
 				<li class="menu_mm"><a href="about.html">About Us</a></li>
 <!-- 				<li class="menu_mm"><a href="services.html">Services</a></li>
 				<li class="menu_mm"><a href="portfolio.html">Portfolio</a></li>
@@ -119,13 +123,21 @@
 		</div>
 		
 		<!-- Hero Slider -->
-		<div class="hero_slider_container">
+
+		<!-- <div class="hero_slider_container"> -->
 			
 			<!-- Slider -->
-			<div class="owl-carousel owl-theme hero_slider">
+			<!-- <div class="owl-carousel owl-theme hero_slider"> -->
 
 				<!-- Slider Item -->
-				<div class="owl-item hero_slider_item item_1 d-flex flex-column align-items-center justify-content-center">
+				<div class="owl-item  item_1 d-flex flex-column align-items-center justify-content-center">
+					<span></span><br><br><br><br><br><br>
+					<span><img src="images/logo.png" alt=""></span>
+					<!-- <div style="font-size: 200px; font-family: Raleway; color: white" pa>OxiRay</div> -->
+					<div id="maintext" style="font-size: 150px;font-family: Oswald; color: white"></div>
+					<span>Next generation wearble tech.</span>
+				</div>
+				<!-- <div class="owl-item hero_slider_item item_1 d-flex flex-column align-items-center justify-content-center">
 					<span></span>
 					<span><img src="images/logo.png" alt=""></span>
 					<span>OxiRay</span>
@@ -136,32 +148,26 @@
 					<span><img src="images/logo.png" alt=""></span>
 					<span>OxiRay</span>
 					<span>Next Gen wearble tech!</span>
-				</div>
-				<div class="owl-item hero_slider_item item_1 d-flex flex-column align-items-center justify-content-center">
-					<span></span>
-					<span><img src="images/logo.png" alt=""></span>
-					<span>OxiRay</span>
-					<span>Next Gen wearble tech!</span>
-				</div>
+				</div> -->
 
 
-			</div>
+			<!-- </div> -->
 			
 			<!-- Hero Slider Navigation Left -->
-			<div class="hero_slider_nav hero_slider_nav_left">
+			<!-- <div class="hero_slider_nav hero_slider_nav_left">
 				<div class="hero_slider_prev d-flex flex-column align-items-center justify-content-center trans_200">
 					<i class="fas fa-chevron-left trans_200"></i>
 				</div>
 			</div>
 
-			<!-- Hero Slider Navigation Right -->
+			Hero Slider Navigation Right
 			<div class="hero_slider_nav hero_slider_nav_right">
 				<div class="hero_slider_next d-flex flex-column align-items-center justify-content-center trans_200">
 					<i class="fas fa-chevron-right trans_200"></i>
 				</div>
-			</div>
+			</div> -->
 
-		</div>
+		<!-- </div> -->
 
 		<!-- <div class="hero_side_text_container">
 			<div class="double_arrow_container d-flex flex-column align-items-center justify-content-center">
@@ -176,12 +182,12 @@
 			</div>
 		</div> -->
 		
-		<div class="next_section_scroll">
+		<!-- <div class="next_section_scroll">
 			<div class="next_section nav_links" data-scroll-to=".icon_boxes">
 				<i class="fas fa-chevron-down trans_200"></i>
 				<i class="fas fa-chevron-down trans_200"></i>
 			</div>
-		</div>
+		</div> -->
 			
 	</div>
 
@@ -548,7 +554,7 @@
 
 						<!-- Logo -->
 						<div class="logo footer_logo">
-							<a href="#">Oxi<span>RAY</span></a>
+							<a href="#">Ox<span>IR</span>ay</a>
 						</div>
 
 						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae enim enim. Sed nec dignissim purus.</p> -->
@@ -657,6 +663,30 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</footer>
 
 </div>
+<script type="text/javascript">
+	var i = 0;
+	var txt = 'Oxiray'; /* The text */
+	var speed = 100; /* The speed/duration of the effect in milliseconds */
+
+	function typeWriter() {
+		console.log("once");
+	  if (i < txt.length) {
+	  	console.log("i is " + i);
+	  	console.log(document.getElementById("maintext").innerHTML);
+	  	console.log(txt.charAt(i));
+	    document.getElementById("maintext").innerHTML += txt.charAt(i);
+	    i++;
+	    setTimeout(typeWriter, speed);
+	  }
+	}
+	window.onload = function () {
+		// body...
+		typeWriter();
+		
+	}
+
+
+</script>
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
