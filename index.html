@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>OxiRay - Home</title>
+<title>OxIRay - Home</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="OxiRay Project">
+<meta name="description" content="OxIRay Project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
@@ -134,8 +134,10 @@
 					<span></span><br><br><br><br><br><br>
 					<span><img src="images/logo_small.png" alt=""></span>
 					<!-- <div style="font-size: 200px; font-family: Raleway; color: white" pa>OxiRay</div> -->
-					<div id="maintext" style="font-size: 150px;font-family: Oswald; color: white"></div>
-					<span>Next generation wearble tech.</span>
+					<div id="maintext" style="font-size: 150px;font-family: Oswald; color: white">
+						<!-- <span id ="subtext" style="font-size: 150px;font-family: Oswald; color: orange"></span> -->
+					</div>
+					<span>Be proactive, not reactive - keep a watch on your health</span>
 				</div>
 				<!-- <div class="owl-item hero_slider_item item_1 d-flex flex-column align-items-center justify-content-center">
 					<span></span>
@@ -216,7 +218,7 @@
 					<!-- Icon Box Item -->
 					<div class="icon_box_item">
 						<h2>Temperature</h2>
-						<p>Oxiray features constant temperature changes and SpO2 measurement which can be monitored using our mobile application.</p>
+						<p>OxIRay features constant temperature changes and SpO2 measurement which can be monitored using our mobile application.</p>
 					</div>
 
 			
@@ -263,7 +265,7 @@
 
 							<!-- Vertical Slider Item -->
 							<div class="v_slider_item">
-								<h1>What does Oxiray do?</h1>
+								<h1>What does OxIRay do?</h1>
 								<p>A smart wrist band with the ability to constantly monitor body temperature and SpO2  levels along with an inbuilt sanitizer mist spray apparatus apart from functioning like any other smart watch. The temperature and the pulse oximeter sensors record their respective values and that data is sent to the microcontroller which is connected via Wi-Fi. The device uploads the data to the database and is accessible through our mobile application where all the details of the person are stored and analysed</p>
 								
 							</div>
@@ -297,7 +299,7 @@
 			<div class="row">
 				<div class="col text-center">
 					<div class="section_title">
-						<h1>OxiRay. Product class and Handling</h1>
+						<h1>OxIRay. Product class and Handling</h1>
 						
 					</div>
 				</div>
@@ -470,7 +472,7 @@
 				<div class="col-lg-5 order-lg-1 order-2">
 					<div class="cta_content">
 						<h1>Oriray for COVID</h1>
-						<p>Oxiray is designed specifically to deal the with the current pandemic situations and can ease the lives of our frontcare workers</p>
+						<p>OxIRay is designed specifically to deal the with the current pandemic situations and can ease the lives of our frontcare workers</p>
 					</div>
 				</div>
 
@@ -562,12 +564,12 @@
 						<!-- Social -->
 						<div class="footer_social">
 							<ul>
-								<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-								<li><a href="#"><i class="fab fa-behance"></i></a></li>
-								<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+								<li><a href="https://www.instagram.com/this_is_oxiray/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+								<!-- <li><a href="#"><i class="fab fa-facebook-f"></i></a></li> -->
+								<!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+								<!-- <li><a href="#"><i class="fab fa-dribbble"></i></a></li> -->
+								<!-- <li><a href="#"><i class="fab fa-behance"></i></a></li> -->
+								<li><a href="https://www.linkedin.com/in/oxiray-be-proactive-not-reactive-ba9aa11b8/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
 							</ul>
 						</div>
 						
@@ -656,7 +658,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			<div class="row">
 				<div class="col">
 					<!-- Copyright -->
-					<div class="footer_cr_2">2017 All rights reserved</div>
+					<div class="footer_cr_2">2020 All rights reserved</div>
 				</div>
 			</div>
 		</div>
@@ -665,7 +667,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </div>
 <script type="text/javascript">
 	var i = 0;
-	var txt = 'Oxiray'; /* The text */
+	var txt = 'Ox'; /* The text */
+	var irText = "IR";
+	var endText = "ay";
+
 	var speed = 100; /* The speed/duration of the effect in milliseconds */
 
 	function typeWriter() {
@@ -678,6 +683,25 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	    i++;
 	    setTimeout(typeWriter, speed);
 	  }
+	  else if(i >= txt.length && i <= 3) {
+	  	console.log("yoyo");
+	  	console.log(irText.charAt(i));
+	  		if(i==2) {
+	  			document.getElementById("maintext").innerHTML += '<span id = "subtext" style="font-size: 150px;font-family: Oswald; color: #ff6b09">I</span>'
+	  		}
+	  		else if(i==3) {
+	  			document.getElementById("subtext").innerHTML += "R";
+	  		}
+	  		// document.getElementById("subtext").innerHTML += irText.charAt(i-2);
+	    i++;
+	    setTimeout(typeWriter, speed);
+	  }
+	  else if(i >3 && i<6) {
+		document.getElementById("maintext").innerHTML += endText.charAt(i-4);
+	    i++;
+	    setTimeout(typeWriter, speed);
+	  }
+
 	}
 	window.onload = function () {
 		// body...
